@@ -22,7 +22,7 @@ a{
 }
 
 body{
-    
+    height: 100%;
 }
 
 /* Header */
@@ -101,7 +101,7 @@ footer{
     justify-content: space-between;
     padding: 0 65px;
     align-items: center;
-    position: fixed;
+    position: relative;
     bottom: 0;
     height: 100px;
     width: 100%;
