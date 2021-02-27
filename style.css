@@ -28,7 +28,6 @@ header{
     font-weight: 700;
     height: 100px;
     width: 100%;
-    padding: 10px;
     margin-bottom: 40px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -36,14 +35,16 @@ header{
 header .list-header{
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
+    margin: 0 auto;
+    width: 92%;
 }
 
 header ul li{
-    margin: 0 15px;
+    
 }
 
 /* main */
@@ -51,12 +52,11 @@ header ul li{
 main{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    align-items: center;
     text-align: center;
-    margin-right: 0;
+    margin: 0 auto;
     margin-bottom: 10px;
-    width: 80%;
+    width: 92%;
 }
 
 main h1{
@@ -73,10 +73,21 @@ main p{
     margin-bottom: 30px;
 }
 
+main a{
+    padding: 8px 23px;
+    font-size: var(--body-mobile);
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+
 aside picture img{
     
-    display: flex;
-    flex-direction: column;
+    
+    
     width: 100%;
 }
 
