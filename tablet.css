@@ -22,7 +22,7 @@ a{
 }
 
 body{
-    height: 100%;
+    
 }
 
 /* Header */
@@ -136,7 +136,7 @@ footer{
 }
 
 .footer__icons-container{
-    top: -25px;
+    top: -35px;
     left: 0px;
     position: absolute;
     display: flex;
@@ -145,5 +145,5 @@ footer{
 }
 
 footer img{
-    width: 60px;
+    width: 70px;
 }
