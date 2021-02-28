@@ -58,6 +58,7 @@ header .list-contact{
     top: 20px;
     right: 0;
     width: 30%;
+    visibility: visible;
 }
 
 .header__github-container{
@@ -94,7 +95,7 @@ main{
     align-items: center;
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 190px;
+    /* margin-bottom: 190px; */
     width: 100%;
     padding-left: 40px;
     padding-right: 600px;
@@ -145,8 +146,8 @@ footer{
     justify-content: space-between;
     padding: 0 122px;
     align-items: center;
-    position: relative;
-    bottom: 0;
+    position: absolute;
+    top: 100vh;
     height: 75px;
     width: 100%;
     background-color: var(--warm-black);
