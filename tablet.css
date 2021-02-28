@@ -49,6 +49,10 @@ header .list-header{
     width: 80%;
 }
 
+header .list-contact{
+    visibility: hidden;
+}
+
 /* main */
 
 main{

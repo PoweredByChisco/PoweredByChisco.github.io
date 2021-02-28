@@ -42,12 +42,48 @@ header{
 header .list-header{
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
-    margin: 0 auto;
-    width: 80%;
+    margin: 0;
+    width: 70%;
+}
+
+header .list-contact{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 30%;
+}
+
+.header__github-container{
+    display: flex;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.header__github-container img{
+    margin-right: 5px;
+    width: 29px;
+}
+
+.header__linkedin-container{
+    display: flex;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.header__linkedin-container img{
+    margin-right: 5px;
+    width: 29px;
 }
 
 /* main */
@@ -117,6 +153,7 @@ footer{
 }
 
 .footer__github-container{
+    visibility: hidden;
     display: flex;
     color: white;
     font-family: 'Open Sans', sans-serif;
@@ -127,6 +164,7 @@ footer{
 .footer__github-container img{
     margin-right: 5px;
     width: 29px;
+    visibility: hidden;
 }
 
 .footer__linkedin-container{
@@ -135,11 +173,13 @@ footer{
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 25px;
+    visibility: hidden;
 }
 
 .footer__linkedin-container img{
     margin-right: 5px;
     width: 29px;
+    visibility: hidden;
 }
 
 .footer__icons-container{
