@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --body-mobile: 2.5rem;
+    --h1-mobile: 5rem;
+    --warm-black: #121212;
+}
+
+html{
+    font-family: 'Fraunces', serif;
+    font-size: 62.5%;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+header{
+    font-size: var(--body-mobile);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    height: 75px;
+    width: 100%;
+    margin-bottom: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    margin-bottom: 82px;
+}
+
+header .list-header{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+}
+
+header .list-contact{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 30%;
+    visibility: visible;
+}
+
+.header__github-container{
+    display: flex;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    visibility: hidden;
+}
+
+.header__github-container img{
+    margin-right: 5px;
+    width: 29px;
+    visibility: hidden;
+}
+
+.header__linkedin-container{
+    display: flex;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    visibility: hidden;
+}
+
+.header__linkedin-container img{
+    margin-right: 5px;
+    width: 29px;
+    visibility: hidden;
+}
+
+/* main */
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main div img{
+    position: relative;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.main__container{
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--body-mobile);
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    border-bottom: 2px solid black;
+    margin-bottom: 40px;
+}
+
+main .main__container .main__container--img img{
+    width: 300px;
+    height: 100%;
+}
+
+/* footer */
+
+footer{
+    align-self: flex-end;
+    justify-self: flex-end;
+    padding: 0 122px;
+    height: 75px;
+    width: 100%;
+    background-color: var(--warm-black);
+}
+
+.footer__github-container{
+    display: flex;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.footer__github-container img{
+    margin-right: 5px;
+    width: 29px;
+}
+
+.footer__linkedin-container{
+    display: flex;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.footer__linkedin-container img{
+    margin-right: 5px;
+    width: 29px;
+}
+
+.footer__icons-container{
+    top: -45px;
+    left: 0px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    visibility: hidden;
+}
+
+footer img{
+    width: 80px;
+}
