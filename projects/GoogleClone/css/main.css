@@ -1,0 +1,292 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: arial,sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header{
+    width: 100%; /* Tengo que colocarle esto porque de otra manera no me respeta el align-items del nav-right-section, esto pasa por alguna razon porque estoy reinicializando los estilos con el selector '*', esto no pasa si reinicializo los estilos en el body */
+    height: 7.1%;
+    
+}
+
+header nav{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 13px;
+}
+
+nav .nav-right-section{
+    width: 350px;
+    /* Al haberle definido una altura al padre nostros ya no podemos definirle una altura mas grande, por eso ponemos una altura automatica respecto al padre*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+
+}
+
+.nav-right-section li{
+    margin-right: 15px ;
+}
+
+.nav-right-section a{
+    color: #000000DE;
+}
+
+.nav-right-section a:hover{
+    text-decoration: underline;
+}
+
+.nav-right-section__menu-icon{
+    background-image: url(/img/menu-grid.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain ;
+    width: 15px;
+    height: 15px;
+}
+
+.nav-right-section__button-session{
+    background-color: #4285f4;
+    margin-right: 10px;
+    width: 109.1px;
+    height: 32px;
+    color: white;
+    padding: 0 12px;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80.9%;
+    
+}
+
+.main-logo{
+    margin-top: 109px;
+    margin-bottom: 25px;
+}
+
+.main-input{
+    margin-bottom: 28px;
+}
+
+.main-input__container{
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 482px;
+    height: 44px;
+    border: 1px  #e3e5e8 solid;
+    border-radius: 50px;
+}
+
+.main-input__container:hover{
+    box-shadow: 0 1px 5px 1px #d8dadd
+}
+
+.main-input__container .main-input__container--search-icon{
+    background-image: url(https://img.icons8.com/fluent-systems-regular/24/000000/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    height: 44px;
+    width: 44px;
+    position: relative;
+}
+
+
+.main-input__container .main-input__container--micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+    width: 44px;
+    height: 44px;
+    margin-right: 3px;
+}
+
+.main-input__container--tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.801);
+    height: 29px;
+    font-size: 11px;
+    font-family: inherit;
+    font-weight: bold;
+    /* Position the tooltip text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    right: 38px;
+    
+    
+}
+
+.main-input__container--micro-icon:hover .main-input__container--tooltiptext{
+    visibility: visible;
+}
+
+.main-input__container--micro-icon .main-input__container--tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px; /*Lo alinea respecto al ancho del border*/
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgba(0, 0, 0, 0.801) transparent;
+}
+/*Esta linea de codigo sirve para generar un triangulo, la manera en como lo hace es generar un cuadrado donde el centro solamente tiene un espacio, causando asi que la totalidad del cuadro sea puro borde, al ser asi cada borde de cada lado forma la ilusio de un triangulo*/
+
+
+
+.main-input__container input{
+    font-size: unset;
+    box-sizing: content-box;
+    width: 387px;
+    height: 34px;
+    border: 0;
+    outline: none;
+}
+
+.main-buttons{
+    display: flex;
+    font-size: 14px;
+    color: #3c4043;
+}
+
+.main-buttons__search button{
+    margin-right: 10px;
+    color: inherit;
+    font-size: inherit;
+    box-sizing: content-box;
+    border: 1px solid transparent;
+    width: 119.075px;
+    height: 34px;
+    padding: 0 16px;
+    background-color: #F8F9FA;
+    border-radius: 4px;
+}
+
+.main-buttons__search button:hover{
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 0px 0.8px rgba(0, 0, 0, 0.13);
+}
+
+.main-buttons__search button:focus{
+    outline: none;
+    border: solid 1px #4285F4;
+}
+
+.main-buttons__lucky button{
+    color: inherit;
+    font-size: inherit;
+    box-sizing: content-box;
+    border: 1px solid transparent;
+    width: 133.850px;
+    height: 34px;
+    padding: 0 16px;
+    background-color: #F8F9FA;
+}
+
+.main-buttons__lucky button:hover{
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 0px 0.8px rgba(0, 0, 0, 0.13);
+}
+
+.main-buttons__lucky button:focus{
+    outline: none;
+    border: solid 1px #4285F4;
+}
+
+footer{
+    height: 12%;
+}
+
+.footer-container{
+    height: 100%;
+}
+
+
+.footer-container__country{
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 50%;
+    border: 1px solid #d9dadb;
+    display: flex;
+    align-items: center;
+    color: rgba(0,0,0,.54);
+    font-size: 15px;
+    padding-left: 27px;
+}
+
+.footer-container__others{
+    background-color: #F2F2F2;
+    border: 1px solid #e8e9ec;
+    height: 50%;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.footer-container__others ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-container__others a{
+    color: rgba(0,0,0,.54);
+}
+
+.footer-container__others a:hover{
+    text-decoration: underline;
+}
+
+footer .footer-container .footer-container__others .footer-container__others--left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer .footer-container .footer-container__others .footer-container__others--left li{
+    margin-left: 16px;
+}
+
+footer .footer-container .footer-container__others .footer-container__others--right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .footer-container .footer-container__others .footer-container__others--right li{
+    margin-right: 16px;
+}
