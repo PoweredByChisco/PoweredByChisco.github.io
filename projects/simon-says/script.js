@@ -137,5 +137,5 @@ class Juego {
 }
 
 function empezarJuego() {
-    window.juego = new Juego() //Lo pasamos a window para poder consultarlo directamente con nuestra consola
+    juego = new Juego() //Lo pasamos a window para poder consultarlo directamente con nuestra consola
 }
