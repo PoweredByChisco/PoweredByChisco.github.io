@@ -11,6 +11,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="./css/tablet.css"
+      media="screen and (min-width: 730px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/desktop.css"
+      media="screen and (min-width: 850px)"
+    />
   </head>
   <body>
     <header>
@@ -25,7 +35,7 @@
           tendencias.
         </p>
         <div class="header__title-container--button">
-          <a href=""
+          <a href="#plans"
             >Conoce nuestros planes
             <span
               ><img
@@ -62,52 +72,69 @@
             <p>$ 0.07</p>
             <p>$ 2.15</p>
             <p>$ 4.96</p>
+            <!-- <img src="./assets/icons/right-arrow.svg" /> -->
           </div>
-          <img src="./assets/icons/right-arrow.svg" />
           <div class="main__update-button">
             <p><b>Actualizado:</b> 19 Julio 23:45</p>
+          </div>
+          <h3>Comisiones</h3>
+          <div class="main__coins--grid2">
+            <p>Bitrade</p>
+            <p>Bitpreco</p>
+            <p>Novadax</p>
+            <p>Coinext</p>
+            <p>$ 12.96</p>
+            <p>$ 13.07</p>
+            <p>$ 13.15</p>
+            <p>$ 14.96</p>
+          </div>
+          <div class="main__update-button2">
+            <p><b>Actualizado:</b> 19 Julio 23:48</p>
           </div>
         </div>
       </section>
       <section class="main__benefits-section">
+        <img src="./assets/icons/batata.svg" alt="Batata Icon">
         <div class="main__benefits-section--title">
           <h2>Creamos un producto sin comparación.</h2>
           <p>Confiable y diseñado para su uso diario.</p>
         </div>
         <div class="main__benefits-section--container">
-          <img src="./assets/icons/clock.svg" alt="" />
-          <h3>Tiempo real</h3>
-          <p>
-            Nuestro API toma información minuto a minuto sobre las tasas que más
-            determinan el comportamiento.
-          </p>
-        </div>
-        <div class="main__benefits-section--container">
-          <img src="./assets/icons/eye.svg" alt="" />
-          <h3>No hay tasas escondidas</h3>
-          <p>
-            Ni en la compra o al momento de exit, Batabit siempre te muestra el
-            costo real de lo que estás adquiriendo.
-          </p>
-        </div>
-        <div class="main__benefits-section--container">
-          <img src="./assets/icons/dollar-sign.svg" alt="" />
-          <h3>Compara monedas</h3>
-          <p>
-            No más rumores, con Babtabit sabrás el valor real de cada moneda en
-            el mercado actual.
-          </p>
-        </div>
-        <div class="main__benefits-section--container">
-          <img src="./assets/icons/check-circle.svg" alt="" />
-          <h3>Información confiable</h3>
-          <p>
-            Nuestras fuentes están 100% verificadas y continuamos auditando su
-            contenido mientras se actualizan.
-          </p>
+          <div class="main__benefits-section--card">
+            <img src="./assets/icons/clock.svg" alt="" />
+            <h3>Tiempo real</h3>
+            <p>
+              Nuestro API toma información minuto a minuto sobre las tasas que
+              más determinan el comportamiento.
+            </p>
+          </div>
+          <div class="main__benefits-section--card">
+            <img src="./assets/icons/eye.svg" alt="" />
+            <h3>No hay tasas escondidas</h3>
+            <p>
+              Ni en la compra o al momento de exit, Batabit siempre te muestra
+              el costo real de lo que estás adquiriendo.
+            </p>
+          </div>
+          <div class="main__benefits-section--card">
+            <img src="./assets/icons/dollar-sign.svg" alt="" />
+            <h3>Compara monedas</h3>
+            <p>
+              No más rumores, con Babtabit sabrás el valor real de cada moneda
+              en el mercado actual.
+            </p>
+          </div>
+          <div class="main__benefits-section--card">
+            <img src="./assets/icons/check-circle.svg" alt="" />
+            <h3>Información confiable</h3>
+            <p>
+              Nuestras fuentes están 100% verificadas y continuamos auditando su
+              contenido mientras se actualizan.
+            </p>
+          </div>
         </div>
       </section>
-      <section class="main__plans-section">
+      <section class="main__plans-section" id="plans">
         <div class="main__plans-section--img-container">
           <h2>Conócelo hoy.</h2>
         </div>
@@ -115,17 +142,44 @@
           <h2>Escoge el plan que mejor se ajuste a ti.</h2>
           <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
         </div>
-        <div class="main__plans-section--plans">
-          <p class="reference-button">Recomendado</p>
-          <h3>Pago Anual</h3>
-          <h2>99</h2>
-          <!-- Puedo hacer el simbolo de dolar con un pseudoelemento o con otra caja div -->
-          <p>*Ahorras $129 comparado al plan mensual.</p>
-          <p>
-            Escoger este
-            <img src="./assets/icons/orange-right-arrow.svg" alt="" />
-          </p>
-        </div>
+        <section class="main__plans-section--slide">
+          <div class="main__plans-section--plans">
+            <p class="reference-button hidden">Recomendado</p>
+            <h3>Pago Anual</h3>
+            <h2><span>$</span>99</h2>
+            <!-- Puedo hacer el simbolo de dolar con un pseudoelemento o con otra caja div -->
+            <p>*Ahorras $129 comparado al plan mensual.</p>
+            <button>
+              Escoger este
+              <img src="./assets/icons/orange-right-arrow.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="main__plans-section--plans">
+            <p class="reference-button">Recomendado</p>
+            <h3>Pago Anual</h3>
+            <h2><span>$</span>99</h2>
+            <!-- Puedo hacer el simbolo de dolar con un pseudoelemento o con otra caja div -->
+            <p>*Ahorras $129 comparado al plan mensual.</p>
+            <button>
+              Escoger este
+              <img src="./assets/icons/orange-right-arrow.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="main__plans-section--plans">
+            <p class="reference-button hidden">Recomendado</p>
+
+            <h3>Pago Anual</h3>
+            <h2><span>$</span>99</h2>
+            <!-- Puedo hacer el simbolo de dolar con un pseudoelemento o con otra caja div -->
+            <p>*Ahorras $129 comparado al plan mensual.</p>
+            <button>
+              Escoger este
+              <img src="./assets/icons/orange-right-arrow.svg" alt="" />
+            </button>
+          </div>
+        </section>
       </section>
     </main>
     <footer>
